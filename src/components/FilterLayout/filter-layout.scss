@@ -1,0 +1,32 @@
+.filter-layout {
+    .filter-head {
+        display: flex;
+        overflow: hidden;
+        padding: 10px 0;
+        color: #000;
+        align-items: center;
+        width: 100%;
+        background: #58A827;
+        box-shadow: 0 -4px 14px 3px #58a827;
+
+
+        h2 {
+            margin: 0 10px;
+            margin-right: auto;
+        }
+
+        .f-close {
+            margin: 0 10px;
+            color: #000;
+        }
+    }
+
+    .filter-value {
+        height: 90vh;
+        overflow-y: scroll;
+        padding-bottom: 100px;
+    }
+    .filter-btn{
+    	margin: 20px 30px;
+    }
+}

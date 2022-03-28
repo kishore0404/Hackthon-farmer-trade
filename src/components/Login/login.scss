@@ -1,0 +1,42 @@
+.user-login {
+    border: 1px solid transparent;
+    border-radius: 20px;
+    box-shadow: 0 0px 5px #58A827;
+    margin: 100px 10px 0;
+
+    .login-heading {
+        background: #58A827;
+        padding: 12px 20px 8px;
+        margin: 0;
+        border: 1px solid #58A827;
+        border-radius: 20px 20px 0 0;
+        color: #000000;
+        span{
+        	vertical-align: top;
+        }
+    }
+    .button-block{
+        margin: 20px;
+    }
+    .label-stacked{
+        transform: none;
+    }
+    .form-submit-btn{
+        margin: 20px;
+    }
+    .login-error{
+        color: red;
+        font-size: 20px;
+        padding: 20px 10px;
+        background: #ede5e552;
+        margin: 10px;
+        border: 1px solid #f0b8b8;
+        border-radius: 10px;
+        display: flex;
+        .msg{
+            vertical-align: top;
+            margin-left: 10px;
+        }
+
+    }
+}

@@ -1,0 +1,42 @@
+.f-search{
+     position: relative;
+	.filter-section{
+		display: flex;
+        overflow: hidden;
+        margin: 1em 0;
+        color: #000;
+        align-items: center;
+        width: 100%;
+    }
+
+    .left {
+        margin: 0 20px;
+        margin-right: auto;
+    }
+
+    .right {
+        margin: 0 20px;
+    }
+    .filter{
+    	background: #ccc;
+    	padding: .5rem 10px;
+    	color:  #58A827;
+    	font-size: 20px;
+    	font-weight: bold;
+    }
+	.number-of-page{
+		margin: 20px;
+		text-align: right;
+	}
+	.page-number{
+		display: inline-block;
+		span{
+			padding: 10px;
+			background: #cccccc;
+			margin: 0 5px;
+			&.selected{
+				background: #58A827;
+			}
+		}
+	}
+}

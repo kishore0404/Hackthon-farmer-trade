@@ -1,0 +1,8 @@
+{
+  "name": "MandiData",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react",
+  "id": "b4696953"
+}

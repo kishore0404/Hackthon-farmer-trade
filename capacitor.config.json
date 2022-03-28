@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "Farmers Trade",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}
