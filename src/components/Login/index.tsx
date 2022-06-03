@@ -57,10 +57,10 @@ const Login: React.FC = () => {
 
 
     const formDataCallBack = (data: any) => {
-    	var api = loginApiFarmer;
-    	if(data.userType === "Buyer"){
-    		api = loginApiBuyer;
-    	}
+        var api = loginApiFarmer;
+        if (data.userType === "Buyer") {
+            api = loginApiBuyer;
+        }
         APIService.axiosCall(api, {
             method: "POST",
             data: data,
@@ -80,24 +80,19 @@ const Login: React.FC = () => {
     };
     return (
         <div className="user-login">
-         <h2 className="login-heading">
-         	<IonIcon icon={personCircleOutline} size="large"></IonIcon>&nbsp;<span>Login</span>
-         </h2>
-         {showErrorMsg && <div className="login-error">
-         <span>
-         <IonIcon icon={alertCircleOutline} size="large"></IonIcon>
-         </span>
-         <span className="msg">
-         	The username or password entered is incorrect. Please try again.
-         </span>
-         </div>}
-         <Form fields= {loginData}
-          formDataCallBack = {formDataCallBack}
-           submitLabel="Login"
-           formName="loginForm"
-           formId="loginForm"
-          />
-    </div>
+            <h2 className="login-heading">
+                <IonIcon icon={personCircleOutline} size="large"></IonIcon>&nbsp;<span>Login</span>
+            </h2>
+            {showErrorMsg && <div className="login-error">
+                <span>
+                    <IonIcon icon={alertCircleOutline} size="large"></IonIcon>
+                </span>
+                <span className="msg">
+                    The username or password entered is incorrect. Please try again.
+                </span>
+            </div>}
+            <Form fields={loginData} formDataCallBack={formDataCallBack} submitLabel="Login" formName="loginForm" formId="loginForm" />
+        </div>
     );
 };
 

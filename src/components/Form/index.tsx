@@ -1,40 +1,38 @@
-
 import { useState } from 'react';
 import { IonItem, IonLabel, IonInput, IonButton, IonIcon, IonRadio, IonRadioGroup, IonSelect, IonSelectOption, IonCheckbox, IonList } from '@ionic/react';
-import {useForm} from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 import { alertCircleOutline } from "ionicons/icons";
 
 import './form.css'
 
-export const Form =  ({ ...props }) => {
-  const [formData, setFormData] = useState<Object>({});
-  const [selectedRadio, setSelectedRadio] = useState<string>('');
+export const Form = ({ ...props }) => {
+    const [formData, setFormData] = useState < Object > ({});
+    const [selectedRadio, setSelectedRadio] = useState < string > ('');
 
-  const { register, handleSubmit, formState: { errors } } = useForm({
-		mode: "onTouched",
-		reValidateMode: "onChange"
-	});
+    const { register, handleSubmit, formState: { errors } } = useForm({
+        mode: "onTouched",
+        reValidateMode: "onChange"
+    });
 
-  // const updateData = (data: any) => {
-  //   setFormData({ [data.target.name]: data.target.value });
-  // }
+    // const updateData = (data: any) => {
+    //   setFormData({ [data.target.name]: data.target.value });
+    // }
 
-  // const updateCheckboxData = (data: any) => {
-  //   setFormData({ [data.target.name]: [data.target.value] });
-  //   console.log(data, formData);
-  // }
+    // const updateCheckboxData = (data: any) => {
+    //   setFormData({ [data.target.name]: [data.target.value] });
+    //   console.log(data, formData);
+    // }
 
-  const onSubmit = (data: any) => {
-    let finalData = {...data, ...formData};
-    props.formDataCallBack(finalData);
-  }
+    const onSubmit = (data: any) => {
+        let finalData = { ...data, ...formData };
+        props.formDataCallBack(finalData);
+    }
 
-  return (
-    <>
-      {props.title && <h3 className='x-15'> {props.title}</h3>}
-      {props.subContent && <div className='x-15'>{props.subContent}</div>}
+    return ( <> 
+      { props.title && <h3 className='x-15'> {props.title}</h3> } 
+      { props.subContent && <div className='x-15'>{props.subContent}</div> }
 
-      <form onSubmit={ handleSubmit(onSubmit) } className="forms">
+        <form onSubmit={ handleSubmit(onSubmit) } className="forms">
         { props.fields.map((field: any, index: any) => {
           const { label, required, requiredOptions, props } = field;
           const labelPosition = props.labelPosition || "stacked";
@@ -94,7 +92,7 @@ export const Form =  ({ ...props }) => {
         })}
 
         <IonButton type="submit" className="ion-margin-top form-submit-btn" expand="full">{props.submitLabel}</IonButton>
-      </form>
-    </>
-  );
+      </form> 
+      </>
+    );
 };

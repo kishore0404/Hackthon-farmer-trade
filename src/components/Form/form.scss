@@ -1,27 +1,32 @@
 .forms {
-  .input-element {
-    max-width: 95%;
-  }
-  .error-icon {
-    position: absolute;
-    bottom: 8px;
-    right: 10px;
-  }
-  .radio-container {
-    width: 100%;
-  }
-  .space-20 {
-    margin-top: 20px;
-  }
+    .input-element {
+        max-width: 95%;
+    }
 
-  .transform-none {
-    transform: none;
-  }
+    .error-icon {
+        position: absolute;
+        bottom: 8px;
+        right: 10px;
+    }
+
+    .radio-container {
+        width: 100%;
+    }
+
+    .space-20 {
+        margin-top: 20px;
+    }
+
+    .transform-none {
+        transform: none;
+    }
 
 }
+
 .title-large {
-  color: #58A827;
+    color: #58A827;
 }
+
 .x-15 {
-  margin: 0 15px 15px;
+    margin: 0 15px 15px;
 }

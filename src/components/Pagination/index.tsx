@@ -1,15 +1,15 @@
 import {
-  IonIcon,
+    IonIcon,
 } from '@ionic/react';
-import { chevronForward, chevronBack  } from "ionicons/icons";
+import { chevronForward, chevronBack } from "ionicons/icons";
 
 const Pagination = (props: any) => {
     const currentPage = props.currentPage,
         totalPage = props.totalPage,
         numberOfPage = [];
-        for(var i=0; i < totalPage; i++){
-            numberOfPage[i] = i;
-        }
+    for (var i = 0; i < totalPage; i++) {
+        numberOfPage[i] = i;
+    }
 
     return (
         <div className="number-of-page">
@@ -20,7 +20,6 @@ const Pagination = (props: any) => {
                    return <span key={`key-${i}`} className={`${i+1 === currentPage?"selected":""}`} onClick={()=> props.pageChange(i+1)}>{i+1}</span>
                 })}
                     
-               
                 {currentPage < totalPage && <IonIcon icon={chevronForward} size="medium"  onClick={()=> props.pageChange(currentPage+1)}  />}
             </div>
         </div>

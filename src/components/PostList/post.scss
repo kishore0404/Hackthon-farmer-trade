@@ -1,23 +1,20 @@
-
-
 .fav-icon {
-  position: absolute;
-  right: 0;
-  color: #58A827;
+    position: absolute;
+    right: 0;
+    color: #58A827;
 
-  &.disabled{
-    cursor: default;
-opacity: .4;
-pointer-events: none;
-  }
+    &.disabled {
+        cursor: default;
+        opacity: .4;
+        pointer-events: none;
+    }
 }
 
-.trash-icon{
-  color: red;
+.trash-icon {
+    color: red;
 }
 
 .card-content {
-  padding-bottom: 0;
-  color: #000;
+    padding-bottom: 0;
+    color: #000;
 }
-

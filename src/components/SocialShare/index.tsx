@@ -1,10 +1,13 @@
 import {
-  IonIcon, IonFab,IonFabButton, IonFabList
+    IonIcon,
+    IonFab,
+    IonFabButton,
+    IonFabList
 } from '@ionic/react';
-import {share, logoVimeo, logoFacebook, logoInstagram, logoTwitter }  from 'ionicons/icons';
+import { share, logoVimeo, logoFacebook, logoInstagram, logoTwitter } from 'ionicons/icons';
 
 const SocialShare = () => {
-   
+
     return (
         <IonFab vertical="bottom" horizontal="start" slot="fixed">
           <IonFabButton>

@@ -17,7 +17,7 @@ const axiosCall = async (url: string, config: any) => {
             if (typeof config.errorCallBack !== 'undefined') {
                 config.errorCallBack(error);
             }
-             eleLoader.classList.remove("show");
+            eleLoader.classList.remove("show");
         });
     return XhrRes;
 }

@@ -5,19 +5,19 @@ import './Tab3.css';
 import Profile from './Profile';
 
 const Tab4: React.FC = () => {
-  return (
-    <IonPage>
-       <Header />
-      <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">My Profile</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <Profile/>
-      </IonContent>
-    </IonPage>
-  );
+    return (
+        <IonPage>
+          <Header />
+          <IonContent fullscreen>
+            <IonHeader collapse="condense">
+              <IonToolbar>
+                <IonTitle size="large">My Profile</IonTitle>
+              </IonToolbar>
+            </IonHeader>
+            <Profile/>
+          </IonContent>
+        </IonPage>
+    );
 };
 
 export default Tab4;

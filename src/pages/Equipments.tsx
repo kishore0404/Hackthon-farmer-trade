@@ -1,33 +1,33 @@
 import React from 'react'
-import {  IonCard, IonCardContent, IonCardHeader, IonCol, IonRow, IonText,  IonAccordionGroup, IonAccordion, IonItem, IonLabel, IonList, IonIcon, IonCardSubtitle, IonCardTitle } from '@ionic/react';
+import { IonCard, IonCardContent, IonCardHeader, IonCol, IonRow, IonText, IonAccordionGroup, IonAccordion, IonItem, IonLabel, IonList, IonIcon, IonCardSubtitle, IonCardTitle } from '@ionic/react';
 import { trashOutline } from "ionicons/icons";
 
 const Equipment: React.FC = () => {
 
-  const data = [{
-    type : "Machinery",
-    name: "Tractor",
-    price: "2000",
-    manufactureYear: "2020" 
-  },
-  {
-    type : "Carrier",
-    name: "Trailer",
-    price: "1500",
-    manufactureYear: "2021" 
-  },
-  {
-    type : "Electric",
-    name: "Water Pump",
-    price: "1800",
-    manufactureYear: "2022" 
-  }
-]
+    const data = [{
+            type: "Machinery",
+            name: "Tractor",
+            price: "2000",
+            manufactureYear: "2020"
+        },
+        {
+            type: "Carrier",
+            name: "Trailer",
+            price: "1500",
+            manufactureYear: "2021"
+        },
+        {
+            type: "Electric",
+            name: "Water Pump",
+            price: "1800",
+            manufactureYear: "2022"
+        }
+    ]
 
 
 
-  return (
-    <IonRow className="ion-justify-content-center">
+    return (
+        <IonRow className="ion-justify-content-center">
       <IonCol>
         <IonAccordionGroup value="accountInformation">
           <IonAccordion value="accountInformation">
@@ -58,7 +58,7 @@ const Equipment: React.FC = () => {
       </IonCol>
     </IonRow>
 
-  )
+    )
 }
 
 export default Equipment
